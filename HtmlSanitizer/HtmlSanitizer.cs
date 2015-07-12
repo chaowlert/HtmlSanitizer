@@ -374,7 +374,7 @@ namespace Ganss.XSS
             }
 
             if (outputFormatter == null)
-                outputFormatter = new FormatDefault(DomRenderingOptions.RemoveComments | DomRenderingOptions.QuoteAllAttributes, HtmlEncoders.Default);
+                outputFormatter = new FormatDefault(DomRenderingOptions.RemoveComments | DomRenderingOptions.QuoteAllAttributes, HtmlEncoders.MinimumNbsp);
 
             var output = dom.Render(outputFormatter);
 
